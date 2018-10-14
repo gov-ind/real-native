@@ -1,0 +1,45 @@
+{
+  "name": "rn-components",
+  "version": "0.0.55",
+  "description": "Some RN components that I use",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "precommit": "lint-staged",
+    "lint": "eslint --fix **/*.js"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "author": "Gov",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "16.3.1",
+    "react-native": "0.55.4"
+  },
+  "dependencies": {
+    "react": "16.6.0-alpha.8af6728",
+    "react-native": "0.57.3",
+    "react-native-datepicker": "1.7.2",
+    "react-native-modal": "5.4.0",
+    "react-native-modal-popover": "0.0.12",
+    "react-native-size-matters": "0.1.0",
+    "react-native-tab-view": "0.0.77",
+    "react-native-vector-icons": "4.5.0",
+    "react-redux": "5.0.7",
+    "redux": "4.0.1",
+    "rn-textinputlayout": "1.0.5"
+  },
+  "devDependencies": {
+    "babel-jest": "23.6.0",
+    "jest": "23.6.0",
+    "metro-react-native-babel-preset": "0.48.1",
+    "react-test-renderer": "16.6.0-alpha.8af6728"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
